@@ -88,7 +88,7 @@ class TrackContainer extends StatelessWidget {
                     },
                     child: Row(
                       children: [
-                        const Text("Track Now"),
+                        const Text("Track Now", style: TextStyle(color: Colors.white),),
                         const Spacer(),
                         SvgPicture.asset("assets/forward_arrow.svg"),
                       ],
@@ -120,10 +120,11 @@ class TrackContainer extends StatelessWidget {
                         Container(
                           height: 56.h,
                           width: 56.w,
+                          padding: EdgeInsets.all(15),
                           decoration: const BoxDecoration(
                               color: Color(0xFFF1F6FB), shape: BoxShape.circle),
-                          child: SvgPicture.asset(
-                            "assets/bus.svg",
+                          child: Image.asset(
+                            "assets/bus.png",
                           ),
                         ),
                         SizedBox(width: 16.w),

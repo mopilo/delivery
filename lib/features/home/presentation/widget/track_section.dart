@@ -29,7 +29,7 @@ class TrackSection extends StatelessWidget {
             ),
             child: Row(
               children: [
-                const Text("Your Orders",),
+                const Text("Your Orders", style: TextStyle(color: Colors.white),),
                 SizedBox(width: 21.w),
                 SvgPicture.asset("assets/forward_arrow.svg"),
               ],

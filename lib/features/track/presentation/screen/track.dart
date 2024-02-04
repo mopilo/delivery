@@ -167,6 +167,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
               const SizedBox(height: 24,),
 
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -174,10 +175,11 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                       Container(
                         height: 56.h,
                         width: 56.w,
+                        padding: const EdgeInsets.all(15),
                         decoration: const BoxDecoration(
-                            color: Color(0xFFF1F6FB), shape: BoxShape.circle),
-                        child: SvgPicture.asset(
-                          "assets/bus.svg",
+                            color: Color(0xFFFFD337), shape: BoxShape.circle),
+                        child: Image.asset(
+                          "assets/bus.png",
                         ),
                       ),
                       SizedBox(width: 16.w),
@@ -189,6 +191,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                             style: GoogleFonts.inter(
                                 textStyle: context.textTheme.bodyMedium!.copyWith(
                                     color: const Color(0xFF1E3354),
+                                    fontWeight: FontWeight.bold,
                                     letterSpacing: 0)),
                           ),
                           const SizedBox(height: 6),
@@ -211,7 +214,114 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                       )
                     ],
                   ),
-                  const SizedBox(height: 24,),
+                   Container(height: 24, width: 1,
+                   margin: EdgeInsets.symmetric(horizontal: 28.w),
+                   alignment: Alignment.topLeft,
+                   color: Color(0xFFDFE6ED),),
+                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 56.h,
+                        width: 56.w,
+                        padding: const EdgeInsets.all(15),
+                        decoration: const BoxDecoration(
+                            color: Color(0xFFF1F6FB), shape: BoxShape.circle),
+                        child: Image.asset(
+                          "assets/box.png",
+                        ),
+                      ),
+                      SizedBox(width: 16.w),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Transit - Sending City",
+                            style: GoogleFonts.inter(
+                                textStyle: context.textTheme.bodyMedium!
+                                    .copyWith(
+                                        color: const Color(0xFF1E3354),
+                                        fontWeight: FontWeight.bold,
+                                        letterSpacing: 0)),
+                          ),
+                          const SizedBox(height: 6),
+                          Text(
+                            "Jakarta, Indonesia",
+                            style: GoogleFonts.inter(
+                                textStyle:
+                                    context.textTheme.bodyMedium!.copyWith(
+                              color: const Color(0xFF7A809D),
+                            )),
+                          )
+                        ],
+                      ),
+                      const Spacer(),
+                      Text(
+                        "21.00 PM",
+                        style: GoogleFonts.inter(
+                            textStyle: context.textTheme.bodyMedium!.copyWith(
+                                color: const Color(0xFF7A809D),
+                                fontSize: 12.sp)),
+                      )
+                    ],
+                  ),
+                   Container(
+                    height: 24,
+                    width: 1,
+                    margin: EdgeInsets.symmetric(horizontal: 28.w),
+                    alignment: Alignment.topLeft,
+                    color: Color(0xFFDFE6ED),
+                  ),
+                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 56.h,
+                        width: 56.w,
+                        padding: const EdgeInsets.all(15),
+                        decoration: const BoxDecoration(
+                            color: Color(0xFFF1F6FB), shape: BoxShape.circle),
+                        child: Image.asset(
+                          "assets/box.png",
+                        ),
+                      ),
+                      SizedBox(width: 16.w),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Send Form Sukabumi",
+                            style: GoogleFonts.inter(
+                                textStyle: context.textTheme.bodyMedium!
+                                    .copyWith(
+                                        color: const Color(0xFF1E3354),
+                                        fontWeight: FontWeight.bold,
+                                        letterSpacing: 0)),
+                          ),
+                          const SizedBox(height: 6),
+                          Text(
+                            "Sukabumi, Indonesia",
+                            style: GoogleFonts.inter(
+                                textStyle:
+                                    context.textTheme.bodyMedium!.copyWith(
+                              color: const Color(0xFF7A809D),
+                            )),
+                          )
+                        ],
+                      ),
+                      const Spacer(),
+                      Text(
+                        "19.00 PM",
+                        style: GoogleFonts.inter(
+                            textStyle: context.textTheme.bodyMedium!.copyWith(
+                                color: const Color(0xFF7A809D),
+                                fontSize: 12.sp)),
+                      )
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 24,
+                  ),
                 ],
               )
             ],
